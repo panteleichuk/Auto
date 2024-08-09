@@ -16,11 +16,37 @@
     width: 100%;
     }
 
-.img_carousel{
-    height: 400px !important;
+.defender_corusel{
+    height: 700px !important;
+    width: 100%;
     
 
 }
 .thred_model{
     margin-top: 10%;
+}
+body{
+    width: 100%;
+    margin: 0;
+    min-height: 100vh;
+    background: #fae2a9;
+}
+
+.header_img {
+    margin-bottom: 1%;
+    margin-right: 4%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 500px;
+    margin-top: 2%;
+    padding: 0;
+  }
+header{
+    display: flex;
+    flex-direction: row;
+    background: #feeeba
+}
+.logo{
+    margin-top: 4%;
 }
