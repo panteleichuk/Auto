@@ -255,3 +255,239 @@ header{
 .card:hover .card__plus:hover {
   opacity: 1;
 }
+
+
+
+/* СТИЛІ ДЛЯ ALL_PRODUCT CARDS */ /* СТИЛІ ДЛЯ ALL_PRODUCT CARDS */
+
+  .container-backgrounds {
+  max-width: 100%;
+  position: relative;
+  top: 120px;
+  margin: 0 auto;
+  padding-bottom: 10px ;
+  box-sizing: border-box;
+  
+  }
+  .cards-container-backgrounds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  min-height: 440px;
+  }
+  .card-backgrounds {
+  max-width: 350px;
+  max-height: 196px;
+  min-width: 350px;
+  min-height: 196px;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(26, 26, 26, 0.725);
+  transition: transform 0.3s ease;
+  }
+  
+  .card-content-backgrounds {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity .3s ease;
+  }
+  .filter{
+      display: block;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      filter: blur(5px);
+  }
+    .filter {
+      display: block;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-color: #00000096;
+      transition: opacity .4s ease;
+  }
+  .card-backgrounds:hover .filter {
+  opacity:1;
+  }
+  
+  .card-backgrounds:hover .card-content-backgrounds {
+  opacity: 1;
+  }
+  
+  .price-tag-backgrounds {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 5px 15px;
+  border-radius: 7px 15px;
+  color: #fff;
+  background-color: #75D12A;
+  }
+  .owned{
+  border: 3px solid #000000;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.7);
+  
+  }
+  .owned-tag-backgrounds {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 7px 15px;
+  color: #fff;
+  background-color: #B4F003;
+  }
+  .one{
+  background: url(src/nissan.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:210px;
+  
+  }
+
+  .two{
+  background: url(src/audi.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:300px;
+  }
+
+  .three{
+  background: url(src/honda.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:200px;
+  }
+  .four{
+  background: url(src/BMW.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:270px;
+  }
+  .five{
+  background: url(src/mercedes.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:200px;
+  }
+  .six{
+  background: url(src/Lamborghini.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:160px;
+  }
+  .seven{
+    background: url(src/porsche.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:190px;
+  }
+  .eight{
+    background: url(src/toyota.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:400px;
+  }
+  /* .nine{
+    background: url(src/Lamborghini.png)
+  }
+  .ten{
+    background: url(src/Lamborghini.png)
+  } */
+ 
+/* КІНЕЦЬ СТИЛІ ДЛЯ ALL_PRODUCT CARDS */ /* КІНЕЦЬ СТИЛІ ДЛЯ ALL_PRODUCT CARDS */
+
+/* Початок FOOTER */ 
+
+footer{
+  margin-top: 250px;
+  background: #333333;
+  color: white;
+  position: relative;
+  width: 100%;
+}
+footer img{
+  width: 250px;
+  margin-top: 43px;
+}
+footer span{
+  margin-top: 25px;
+}
+footer h6{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+footer .col-3{
+  padding-left: 35px;
+}
+footer a{
+  text-decoration: none;
+  transition: 0.5s;
+  color: white;
+}
+footer a:hover{
+  color: #f5871f;
+}
+footer .fa-whatsapp{
+  margin-right: 5px;
+}
+.copyright{
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  height: 45px;
+  background-color: #242424;
+  padding-top: 15px;
+}
+.footer-container{
+  display: flex;
+}
+.social {
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+  padding-left: 5px;
+}
+.social i {
+  color: #fff;
+  font-size: 17px;
+  margin-right: 15px;
+}
+@media only screen and (max-width: 600px) {
+  footer .col-3{
+   padding-left:0;
+}
+.footer-container{
+    flex-direction: column;
+}
+.footer-container .col-3{
+    width: 100% !important;
+}
+.copyright {
+      font-size: 11px;
+  }
+}
+
+/* Кінець FOOTER */ 

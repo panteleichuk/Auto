@@ -9,6 +9,12 @@ window.addEventListener("load",async()=>{
             .then((res)=> res.text())
             .then((data)=>{
                 document.querySelector("header").innerHTML = data
+
+            fetch("../hbs/footer.hbs")
+            .then((res)=> res.text())
+            .then((data)=>{
+                document.querySelector("footer").innerHTML = data
+                })
             })
         })
 
