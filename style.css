@@ -10,7 +10,10 @@ header{
     flex-direction: row;
     background: #d5c183
 }
-
+main{
+  min-height: 80vh;
+  position: relative;
+}
 
 
 
@@ -259,16 +262,34 @@ header{
 
 
 /* СТИЛІ ДЛЯ ALL_PRODUCT CARDS */ /* СТИЛІ ДЛЯ ALL_PRODUCT CARDS */
+  .arrow, .arrow-cars{
+    position: absolute;
+    width: 50px;
+    right: 0;
+    top: -50px;
+  }
 
-  .container-backgrounds {
+
+  .container-backgrounds, .container-cars  {
+  padding: 20px;
+  justify-content: center;
+  min-height: 70vh;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
   max-width: 100%;
-  position: relative;
+  position: absolute;
   top: 120px;
   margin: 0 auto;
   padding-bottom: 10px ;
   box-sizing: border-box;
   
   }
+
+  .container-cars{
+    right: -100%;
+  }
+
   .cards-container-backgrounds {
   display: flex;
   flex-wrap: wrap;
@@ -348,22 +369,22 @@ header{
   color: #fff;
   background-color: #B4F003;
   }
-  .one{
-  background: url(src/nissan.png);
+  .models{
+  /* background: url(src/nissan.png); */
   background-repeat: no-repeat;
   background-position: center;
-  background-size:210px;
-  
+
+    /* background-size:210px; */
   }
 
-  .two{
-  background: url(src/audi.png);
+  .models{
+  /* background: url(src/audi.png); */
   background-position: center;
   background-repeat: no-repeat;
-  background-size:300px;
+  /* background-size:300px; */
   }
 
-  .three{
+  .models{
   background: url(src/honda.webp);
   background-position: center;
   background-repeat: no-repeat;
@@ -399,18 +420,14 @@ header{
     background-repeat: no-repeat;
     background-size:400px;
   }
-  /* .nine{
-    background: url(src/Lamborghini.png)
-  }
-  .ten{
-    background: url(src/Lamborghini.png)
-  } */
+ 
  
 /* КІНЕЦЬ СТИЛІ ДЛЯ ALL_PRODUCT CARDS */ /* КІНЕЦЬ СТИЛІ ДЛЯ ALL_PRODUCT CARDS */
 
 /* Початок FOOTER */ 
 
 footer{
+  
   margin-top: 250px;
   background: #333333;
   color: white;
