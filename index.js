@@ -1,5 +1,5 @@
 window.addEventListener("load",()=>{
-    fetch("../data/car.json")
+    fetch("data/car.json")
         .then((res)=>res.json())
         .then((car)=>{
             fetch("../hbs/car.hbs")
